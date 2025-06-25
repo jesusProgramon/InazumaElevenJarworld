@@ -1,0 +1,38 @@
+[2025-06-23 14:51:20] ERROR: Error al enviar el código de 2FA: Invalid Addresses
+java.lang.RuntimeException: Error al enviar el código de 2FA: Invalid Addresses
+	at inazuma.EmailServer.sendVerificationCode(EmailServer.java:90)
+	at inazuma.Programa.main(Programa.java:262)
+[2025-06-23 14:51:57] ERROR: Parameter index out of range (1 > number of parameters, which is 0).
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1482)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1497)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:2015)
+	at inazuma.Programa.main(Programa.java:116)
+[2025-06-24 15:03:58] ERROR: Duplicate entry '1-10' for key 'ID_equipo'
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-10' for key 'ID_equipo'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
+	at inazuma.Juego.transferirJugador(Juego.java:393)
+	at inazuma.Juego.menuJugador(Juego.java:240)
+	at inazuma.Juego.seleccionarJugadorPorDorsal(Juego.java:211)
+	at inazuma.Juego.verJugadoresEquipo(Juego.java:180)
+	at inazuma.Juego.menuEquipo(Juego.java:132)
+	at inazuma.Juego.listaEquipos(Juego.java:103)
+	at inazuma.Juego.menuJuego(Juego.java:42)
+	at inazuma.Programa.main(Programa.java:153)
+[2025-06-24 19:35:08] ERROR: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+	at java.base/java.util.Scanner.next(Scanner.java:1619)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+	at inazuma.Programa.main(Programa.java:37)
